@@ -6,10 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-funny = "*"
 colorlog = "*"
-logging = "*"
-mysql-connector-python = "*"
+datetime = "*"
 
 [requires]
 python_version = "3.7"

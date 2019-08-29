@@ -1,4 +1,5 @@
 import colorlog
+from datetime import *
 
 def main():
     logger = colorlog.getLogger()
@@ -12,5 +13,8 @@ def main():
     logger.error("Error message in red")
     logger.critical("Critical message also in red")
 
+    today = date.today()
+
+    print(today)
 
 main()
