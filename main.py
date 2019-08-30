@@ -8,13 +8,13 @@ def main():
     handler.setFormatter(colorlog.ColoredFormatter())
     logger.addHandler(handler)
 
-    logger.info("Info message in green")
-    logger.warning("Warning message in yellow")
-    logger.error("Error message in red")
-    logger.critical("Critical message also in red")
+    logger.info("Green info")
+    logger.warning("Yellow warning")
+    logger.error("Red error")
+    logger.critical("Red critical")
 
     today = date.today()
 
-    print(today)
+    print('Todays date is ', today)
 
 main()
