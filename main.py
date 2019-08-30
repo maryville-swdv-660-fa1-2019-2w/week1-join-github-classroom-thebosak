@@ -8,22 +8,21 @@ SWDV 660 Week 1 Assignment
 import colorlog
 from datetime import *
 
-def main():
-    #logger setup
-    logger = colorlog.getLogger()
-    logger.setLevel(colorlog.colorlog.logging.DEBUG)
-    handler = colorlog.StreamHandler()
-    handler.setFormatter(colorlog.ColoredFormatter())
-    logger.addHandler(handler)
+#logger setup
+logger = colorlog.getLogger()
+logger.setLevel(colorlog.colorlog.logging.DEBUG)
+handler = colorlog.StreamHandler()
+handler.setFormatter(colorlog.ColoredFormatter())
+logger.addHandler(handler)
 
-    #logger statements
-    logger.info("Green info")
-    logger.warning("Yellow warning")
-    logger.error("Red error")
-    logger.critical("Red critical")
+#logger statements
+logger.info("Green color for info message")
+logger.warning("Yellow color for warning message")
+logger.error("Red color for error message")
+logger.critical("Also red color for critical message")
 
-    #date statement
-    today = date.today()
-    print('Todays date is ', today)
+#date statement
+today = date.today()
+print("Today's date is ", today)
 
-main()
+input('Thank you for running my program!  Press ENTER to continue')
